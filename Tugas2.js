@@ -6,7 +6,9 @@ const name = [  "Abigail", "Alexandra", "Alison",
     
 const searchName = (cari, berapa, _callback) => {
 
-  const names = name.filter(el => el.toLowerCase().includes(cari))
+  const names = name.filter(function(el){
+    return el.toLowerCase().includes(cari)
+    })
 
   const hasil = names.splice(0, berapa)
 
