@@ -93,19 +93,19 @@
 // const nilai = [90,99,98,94,20,22,100]
 // nilai.push(200)
 
-// console.log(nilai)
-// function hirasHitung(sapa, cb){
-//     console.log(" Hallo, Selamat "+sapa);
-//     cb(100,100)
-//     return cb(100,100)
-// }
-// function calc(x,y){
-//     return x+y ;
-// }
-// function calc2(x,y){
-//     return x*y ;
-// }
-// console.log(hirasHitung("Pagi",calc))
+console.log(nilai)
+function hirasHitung(sapa, cb){
+    console.log(" Hallo, Selamat "+sapa);
+    cb(100,100)
+    return cb(100,100)
+}
+function calc(x,y){
+    return x+y ;
+}
+function calc2(x,y){
+    return x*y ;
+}
+console.log(hirasHitung("Pagi",calc))
 
 // console.log(hirasHitung("Siang",calc2))
 
