@@ -1,4 +1,4 @@
-const nilai = [2, 25, 4, 14, 17, 30, 8]
+const nilai = [2, 25, 4]
 
 const SeleksiNilai = (num1, num2, dataArray) => {
     if (typeof num1 == "number" || typeof num2 == "number" || !Array.isArray(dataArray)) { 
@@ -9,11 +9,8 @@ const SeleksiNilai = (num1, num2, dataArray) => {
         }     
       }     
     }
-    const hasil = dataArray.filter(el => el >= num1 && el <= num2)  
-
+    const hasil = dataArray.filter(fil => fil >= num1 && fil <= num2)  
     const akhir = hasil.sort((a, b) => a - b) 
-
     console.log(hasil)
 }
-
-SeleksiNilai(15,3, nilai)
+SeleksiNilai(16,15, nilai)
