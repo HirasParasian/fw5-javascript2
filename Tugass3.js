@@ -1,11 +1,11 @@
 const values = [2, 25, 4, 14, 17, 30, 8]
 
-function seleksiNilai (limit1, limit2, data) {
+function seleksiNilai (num1, num2, data) {
 
-  if (typeof limit1 !== "number" || typeof limit2 !== 'number' || !Array.isArray(data)) {
+  if (typeof num1 !== "number" || typeof num2 !== 'number' || !Array.isArray(data)) {
     return 'Data tidak valid'
   }
-  if (limit1 > limit2) {
+  if (num1 > num2) {
     return 'Nilai akhir harus lebih besar dari nilai awal'
   }
   if (data.length <= 5) {
@@ -13,7 +13,7 @@ function seleksiNilai (limit1, limit2, data) {
   }
 
   const result = data.filter(function(el){
-      return el >= limit1 && el <= limit2
+      return el >= num1 && el <= num2
   })
 
   const final = result.sort(function(a,b){
@@ -23,4 +23,4 @@ function seleksiNilai (limit1, limit2, data) {
   console.log(final);
 }
 
-seleksiNilai(20, 100, values)
+seleksiNilai(1, 100, values)
