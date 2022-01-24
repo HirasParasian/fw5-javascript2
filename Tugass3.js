@@ -17,4 +17,4 @@ function seleksiNilai (num1, num2, data) {
   return final
 }
 
-console.log(seleksiNilai(15, 3, [2, 25, 4, 14, 17, 30, 8]))
+console.log(seleksiNilai(3, 15, [2, 25, 4, 14, 17, 30, 8]))
