@@ -32,6 +32,7 @@
 
 // const hewan = ['ayam', 'kucing', 'tikus']
 // console.log(hewan.includes('babi'))
+// console.log(hewan.includes('tikus'))
 
 //F.  indexOf
 // mencari letak index sebuah item di array, jika tidak ada maka return -1 jika ada maka sesuai indexnya
@@ -53,7 +54,7 @@
 // dengan syntax : array.slice(start, end)
 
 // const hewan = ['ayam', 'kucing', 'tikus']
-// console.log(hewan.slice(1,2))
+// console.log(hewan.splice(1,2))
 
 //I.  Delete
 // menghapus item di dalam array dengan meninggalkan undefined/ kosong di dalam array yg di hapus
@@ -63,9 +64,9 @@
 // console.log(hewan)
 
 //J.  Splice 
-// menambah , menghapus atau replace item di array  1 replace/delete 0 input
+// menambah , hapus atau replace item di array  1 replace 0 input
 
-//menghapus
+//hapus yang tidak sesuai
 // const hewan = ['ayam', 'kucing', 'tikus']
 // hewan.splice(1,2)
 // console.log(hewan)

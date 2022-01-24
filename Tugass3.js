@@ -1,26 +1,20 @@
-const values = [2, 25, 4, 14, 17, 30, 8]
-
 function seleksiNilai (num1, num2, data) {
 
-  if (typeof num1 !== "number" || typeof num2 !== 'number' || !Array.isArray(data)) {
-    return 'Data tidak valid'
+  if (data.length <= 5) {
+    return 'Jumlah angka dalam data Array harus lebih dari 5'
   }
   if (num1 > num2) {
     return 'Nilai akhir harus lebih besar dari nilai awal'
-  }
-  if (data.length <= 5) {
-    return 'Jumlah angka dalam dataArray harus lebih dari 5'
-  }
+  } 
 
-  const result = data.filter(function(el){
-      return el >= num1 && el <= num2
+  const result = data.filter(function(el){ //filter data yang >= parameter num1 dan <= parameter num2
+    return el >= num1 && el <= num2
   })
 
-  const final = result.sort(function(a,b){
+  const final = result.sort(function(a,b){ //sorting data
     return a-b
-    })
-
-  console.log(final);
+  })
+  return final
 }
 
-seleksiNilai(1, 100, values)
+console.log(seleksiNilai(15, 3, [2, 25, 4, 14, 17, 30, 8]))
